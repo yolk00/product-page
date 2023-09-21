@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Product Page</title>
+  </head>
+  <body>
+    <div class="layout-grid">
+      <!-- PRODUCT IMAGE -->
+      <div>
+        <div class="product-img">
+          <img
+            src="https://assets.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+            alt="stock reference image"
+            class="preview-img main-img"
+          />
+          <div class="hide-tablet">
+            <img
+              src="https://assets.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+              alt="stock reference image"
+              class="preview-img"
+            />
+            <img
+              src="https://assets.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+              alt="stock reference image"
+              class="preview-img"
+            />
+            <img
+              src="https://assets.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+              alt="stock reference image"
+              class="preview-img"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- PRODUCT INFO -->
+      <div class="product-info">
+        <!-- pagination -->
+        <div class="pagination text-small margin-bottom">
+          <p class="page-nav">
+            <span><a href="#">Shop All</a></span>
+          </p>
+          <p><span class="space-2">></span></p>
+          <p class="page-nav">
+            <span><a href="#">Category</a></span>
+          </p>
+          <p><span class="space-2">></span></p>
+          <p class="page-nav">
+            <span><a href="#">Product Name</a></span>
+          </p>
+        </div>
+        <!-- product heading name -->
+        <h1 class="margin-bottom">Product Name</h1>
+        <!-- price, ratings -->
+        <div class="price-rate-rev margin-bottom">
+          <!-- price -->
+          <h2>$55</h2>
+          <!-- verticle line -->
+          <div class="vl space-2"></div>
+          <!-- rating stars -->
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <!-- rating review text -->
+          <div class="price-rate-rev space-2">
+            <p class="text-small"><span>(5 stars)</span></p>
+            <span class="space-1">•</span>
+            <p class="text-small"><span>10 reviews</span></p>
+          </div>
+        </div>
+        <p class="margin-bottom">
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+            libero vitae erat.</span
+          >
+        </p>
+        <!-- variant -->
+        <div class="margin-bottom">
+          <label class="label-marg" for="variant-1">Variant</label>
+          <br />
+          <select name="variant-1" id="variant-1" class="text-norm">
+            <option value="">Select</option>
+            <option value="">Option One</option>
+            <option value="">Option Two</option>
+            <option value="">Option Three</option>
+          </select>
+        </div>
+        <!-- <div>
+          <label for="variant-2">Variant</label>
+          <br />
+          <button class="box btn-space-10 blk-box text-norm pointer">
+            Option One
+          </button>
+          <button class="box btn-space-10 wht-box text-norm pointer">
+            Option Two
+          </button>
+          <button class="box btn-space-10 text-norm pointer" disabled>
+            Option Three
+          </button>
+        </div> -->
+        <div class="container margin-bottom">
+          <label class="label-marg" for="variant-2">Variant</label>
+          <br />
+          <div class="radio-btn-grp">
+            <div class="input-container btn-space-15">
+              <input id="option-1" type="radio" name="variant-2" checked />
+              <div class="radio-tile">
+                <label for="option-1">Option One</label>
+              </div>
+            </div>
+            <div class="input-container btn-space-15">
+              <input id="option-2" type="radio" name="variant-2" />
+              <div class="radio-tile">
+                <label for="option-2">Option Two</label>
+              </div>
+            </div>
+            <div class="input-container btn-space-15">
+              <input id="option-3" type="radio" name="variant-2" disabled />
+              <div class="radio-tile">
+                <label for="option-3">Option Three</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #, add to cart, buy now, free shipping note -->
+        <div>
+          <!-- <label for="quantity"></label> -->
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="99"
+            class="text-norm btn-space-15 left"
+          /><input
+            type="submit"
+            value="Add To Cart"
+            id="add-to-cart"
+            class="blk-box text-norm right pointer"
+          />
+          <button
+            class="box wht-box text-norm wide btn-space-top pointer margin-bottom"
+          >
+            Buy Now
+          </button>
+          <p class="text-smaller text-center">
+            <span>Free shipping over $50</span>
+          </p>
+        </div>
+        <!-- details, shipping, returns tabs -->
+        <!-- animated html css tabs https://alvarotrigo.com/blog/html-css-tabs/ -->
+        <div class="wrapper bor-box">
+          <div class="tabs bor-box">
+            <div class="tab bor-box">
+              <input
+                type="radio"
+                name="css-tabs"
+                id="tab-1"
+                checked
+                class="tab-switch bor-box"
+              />
+              <label for="tab-1" class="tab-label bor-box">Details</label>
+              <div class="tab-content bor-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                  commodo diam libero vitae erat. Aenean faucibus nibh et justo
+                  cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+                  tristique posuere.
+                </p>
+              </div>
+            </div>
+            <div class="tab bor-box">
+              <input
+                type="radio"
+                name="css-tabs"
+                id="tab-2"
+                class="tab-switch bor-box"
+              />
+              <label for="tab-2" class="tab-label bor-box">Shipping</label>
+              <div class="tab-content bor-box">
+                <p>
+                  Shipping is free for orders over $50. For all purchases under
+                  that amount standard shipping rates will apply.
+                </p>
+              </div>
+            </div>
+            <div class="tab bor-box">
+              <input
+                type="radio"
+                name="css-tabs"
+                id="tab-3"
+                class="tab-switch bor-box"
+              />
+              <label for="tab-3" class="tab-label bor-box">Returns</label>
+              <div class="tab-content bor-box">
+                <p>Return your item within 30 days to get your money back!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="tabs-v2">
+          <input
+            type="radio"
+            class="tab-radio-v2"
+            name="tabs"
+            id="detail"
+            checked
+          />
+          <label for="detail" class="tab-label-v2">Details</label>
+          <div class="tab-content-v2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+            ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+            Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc
+            ut sem vitae risus tristique posuere.
+          </div>
+          <input type="radio" class="tab-radio-v2" name="tabs" id="ship" />
+          <label for="ship" class="tab-label-v2">Shipping</label>
+          <div class="tab-content-v2">
+            Shipping is free for orders above $50. For all purchases under that
+            amount, standard shipping rates will apply.
+          </div>
+          <input type="radio" class="tab-radio-v2" name="tabs" id="return" />
+          <label for="return" class="tab-label-v2">Returns</label>
+          <div class="tab-content-v2">
+            Return your item within 30 days to get your money back!
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>

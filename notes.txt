@@ -1,0 +1,38 @@
+| > KEY < |
+
+vl = verticle line
+
+space-2 = left, right 2vw
+space-1 = left, right 1vw
+
+margin-30 = top, bottom 30px
+
+btn-space-10 = top, right, bottom 10px
+btn-space-15 = top, right, bottom 15px
+
+-------------------------------------------------------------------------------------
+
+[+] i think the right border that shows up in the tab section is a by product of it being a radio button. should look into it to see if there is a way to get rid of it like you can with link text decorations.
+
+[+] still need to fix the spacing around h1. i think the margin top/bottom is collapsing into itself because the space between the Product Name and the Price does not change when i add a new margin to the h1 tag.
+
+[+] change variant 2 to radio buttons so that the selection will toggle automatically.
+    https://www.youtube.com/watch?v=UShd9wHTR-o
+    for more examples search "css radio button" on youtube
+    used this as ref for v2 tabs: https://codepen.io/dcode-software/pen/NWpZjNB
+
+[+] wrap the page in a div to split the page into a 2 box grid 
+
+[+] make sure the top info section should be set to sticky (with the top set to 0). when it reaches the end of its parent containr the shipping info will be revealed.
+    https://www.youtube.com/watch?v=8TyoihVGErI
+
+[+] make the header text elements on the page into a div or span and make a utility margin bottom class. give each section that utility class so the spacing remains uniform throughout the product info section.
+
+[+] i think the product image only looks like it takes up the full screen in the ref site because there are multiple images stacked on top of each other. in reality i think they are all the square photo i have in the doc already.
+
+[] figure out the best size settings to use for the sticky component. and why does it add space to the top of the element.
+    the parent div has a margin of 10%. when i add sticky top 10%, some space is created from the top.
+
+[+] make sure the "details" section is below the fold.
+
+[] (eventually) turn the image section into a lightbox section.
